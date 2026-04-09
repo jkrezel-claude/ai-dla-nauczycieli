@@ -38,7 +38,7 @@ Ten tekst możesz skopiować jednym kliknięciem
 
 ---
 
-## Część 1: Twój pierwszy prompt
+## Twój pierwszy prompt
 
 Zacznijmy od czegoś konkretnego. Skopiuj poniższy prompt, wklej do ChatGPT lub Claude i zobacz co się stanie:
 
@@ -78,7 +78,7 @@ Skopiuj zmieniony prompt, wklej do narzędzia i porównaj wynik z pierwszym.
 
 ---
 
-## Część 2: Jak pisać dobre prompty - metoda RZKFO
+## Jak pisać dobre prompty - metoda RZKFO
 
 Ten plan lekcji wyszedł dobrze, bo prompt miał jasną strukturę. Ta struktura to **RZKFO**:
 
@@ -150,7 +150,7 @@ Każdy prompt jest gotowy do skopiowania - wystarczy uzupełnić miejsca oznaczo
 
 ---
 
-## Część 3: AI czyta Twoje dokumenty
+## AI czyta Twoje dokumenty
 
 AI potrafi analizować pliki - dokumenty Word, arkusze kalkulacyjne, PDF-y, teksty. Wystarczy je wrzucić do rozmowy.
 
@@ -248,7 +248,7 @@ Jeśli chcesz pokazać innym wynik pracy AI (np. na radzie pedagogicznej), ale w
 
 ---
 
-## Część 4: AI jako asystent do czytania
+## AI jako asystent do czytania
 
 Nauczyciele toną w dokumentach - podstawa programowa, regulaminy, metodyki, raporty. AI może je przeczytać za Ciebie i wyciągnąć to, co ważne.
 
@@ -306,7 +306,7 @@ Gemini przeszuka kilkadziesiąt stron i przygotuje raport z linkami do źródeł
 
 ---
 
-## Część 5: Grafika i muzyka AI - szybki przegląd
+## Grafika i muzyka AI
 
 ### Grafika w 2 minuty
 
@@ -347,10 +347,7 @@ Wygenerowany utwór możesz pobrać jako MP3 i puszczać na lekcjach.
 
 ---
 
-## Część 6: Zbuduj własną aplikację - bez programowania (sesja 2)
-
-> Ta część będzie głównym tematem następnego spotkania.
-> Poniżej znajdziesz zapowiedź i przykład do wypróbowania w domu.
+## Zbuduj własną aplikację - bez programowania
 
 ### Jak to działa?
 
