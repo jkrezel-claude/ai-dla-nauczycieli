@@ -1,129 +1,129 @@
-# Biblioteka promptow dla nauczycieli
+# Biblioteka promptów dla nauczycieli
 
-> 20 gotowych promptow do skopiowania i uzycia.
-> Miejsca oznaczone `[UZUPELNIJ]` zamien na swoje dane.
+> 20 gotowych promptów do skopiowania i użycia.
+> Miejsca oznaczone `[UZUPEŁNIJ]` zamień na swoje dane.
 
 ---
 
 ## A. Planowanie lekcji
 
-### 1. Plan lekcji z tabela
+### 1. Plan lekcji z tabelą
 
 ```
-Jestes doswiadczonym nauczycielem [UZUPELNIJ PRZEDMIOT].
+Jesteś doświadczonym nauczycielem [UZUPEŁNIJ PRZEDMIOT].
 
-Przygotuj szczegolowy plan lekcji.
+Przygotuj szczegółowy plan lekcji.
 
 Kontekst:
-- Temat: [UZUPELNIJ TEMAT]
-- Klasa: [UZUPELNIJ]
-- Czas: [UZUPELNIJ] minut
-- Liczba uczniow: [UZUPELNIJ]
+- Temat: [UZUPEŁNIJ TEMAT]
+- Klasa: [UZUPEŁNIJ]
+- Czas: [UZUPEŁNIJ] minut
+- Liczba uczniów: [UZUPEŁNIJ]
 
 Format: tabela z kolumnami:
-Czas | Etap | Co robi nauczyciel | Co robia uczniowie | Materialy
+Czas | Etap | Co robi nauczyciel | Co robią uczniowie | Materiały
 
 Ograniczenia:
-- Max 30% czasu na wyklad
-- Reszta to aktywnosci uczniow (praca w parach, grupach, indywidualna)
-- Na koncu: 3 pytania sprawdzajace + zadanie domowe (max 15 min)
+- Max 30% czasu na wykład
+- Reszta to aktywności uczniów (praca w parach, grupach, indywidualna)
+- Na końcu: 3 pytania sprawdzające + zadanie domowe (max 15 min)
 ```
 
 ### 2. Scenariusz lekcji z celami Blooma
 
 ```
-Jestes ekspertem od dydaktyki.
+Jesteś ekspertem od dydaktyki.
 
-Napisz scenariusz lekcji z celami wedlug taksonomii Blooma.
+Napisz scenariusz lekcji z celami według taksonomii Blooma.
 
-Temat: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
-Czas: [UZUPELNIJ] minut
+Temat: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
+Czas: [UZUPEŁNIJ] minut
 
-Dla kazdego etapu lekcji okresl:
-- Cel ogolny i szczegolowy (z czasownikiem operacyjnym Blooma)
-- Poziom Blooma (Zapamietywanie/Rozumienie/Stosowanie/Analizowanie/Ocenianie/Tworzenie)
-- Metode i forme pracy
-- Srodki dydaktyczne
+Dla każdego etapu lekcji określ:
+- Cel ogólny i szczegółowy (z czasownikiem operacyjnym Blooma)
+- Poziom Blooma (Zapamiętywanie/Rozumienie/Stosowanie/Analizowanie/Ocenianie/Tworzenie)
+- Metodę i formę pracy
+- Środki dydaktyczne
 
-Zadbaj o progresje: zacznij od nizszych poziomow, buduj do wyzszych.
+Zadbaj o progresję: zacznij od niższych poziomów, buduj do wyższych.
 ```
 
 ### 3. Plan projektu edukacyjnego
 
 ```
-Jestes nauczycielem [UZUPELNIJ PRZEDMIOT], ktory planuje projekt edukacyjny.
+Jesteś nauczycielem [UZUPEŁNIJ PRZEDMIOT], który planuje projekt edukacyjny.
 
-Zaprojektuj projekt na [UZUPELNIJ LICZBA] tygodni.
+Zaprojektuj projekt na [UZUPEŁNIJ LICZBA] tygodni.
 
-Temat projektu: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
-Uczniowie pracuja w grupach po [UZUPELNIJ] osob.
+Temat projektu: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
+Uczniowie pracują w grupach po [UZUPEŁNIJ] osób.
 
 Przygotuj:
-1. Cele projektu (3-5 celow)
-2. Harmonogram tygodniowy (co uczniowie robia w kazdym tygodniu)
+1. Cele projektu (3-5 celów)
+2. Harmonogram tygodniowy (co uczniowie robią w każdym tygodniu)
 3. Kryteria oceny (rubryka)
-4. Liste materialow potrzebnych
-5. Pomysly na prezentacje koncowa
+4. Listę materiałów potrzebnych
+5. Pomysły na prezentację końcową
 ```
 
-### 4. Program zajec dodatkowych
+### 4. Program zajęć dodatkowych
 
 ```
-Jestes nauczycielem, ktory prowadzi zajecia dodatkowe.
+Jesteś nauczycielem, który prowadzi zajęcia dodatkowe.
 
-Przygotuj program [UZUPELNIJ LICZBA] spotkan po [UZUPELNIJ] minut.
+Przygotuj program [UZUPEŁNIJ LICZBA] spotkań po [UZUPEŁNIJ] minut.
 
-Temat: [UZUPELNIJ]
-Grupa: [UZUPELNIJ KLASA, POZIOM]
-Cel: [UZUPELNIJ - np. przygotowanie do konkursu, rozszerzenie wiedzy, wyrownanie]
+Temat: [UZUPEŁNIJ]
+Grupa: [UZUPEŁNIJ KLASA, POZIOM]
+Cel: [UZUPEŁNIJ - np. przygotowanie do konkursu, rozszerzenie wiedzy, wyrównanie]
 
-Dla kazdego spotkania podaj:
+Dla każdego spotkania podaj:
 - Temat
 - Cele
-- Aktywnosci
-- Materialy/zadania do domu (opcjonalnie)
+- Aktywności
+- Materiały/zadania do domu (opcjonalnie)
 ```
 
 ---
 
-## B. Materialy dydaktyczne
+## B. Materiały dydaktyczne
 
 ### 5. Karta pracy z zadaniami
 
 ```
-Przygotuj karte pracy dla uczniow klasy [UZUPELNIJ].
+Przygotuj kartę pracy dla uczniów klasy [UZUPEŁNIJ].
 
-Temat: [UZUPELNIJ]
-Poziom trudnosci: [latwy / sredni / trudny]
-Liczba zadan: [UZUPELNIJ]
+Temat: [UZUPEŁNIJ]
+Poziom trudności: [łatwy / średni / trudny]
+Liczba zadań: [UZUPEŁNIJ]
 
 Struktura karty:
-- Naglowek: temat, klasa, imie ucznia
-- Zadania ponumerowane, z miejscem na odpowiedz
-- Roznicowanie: oznacz zadania gwiazdka (*) dla chetnych
-- Na koncu: zadanie kreatywne (otwarte, bez jednej poprawnej odpowiedzi)
+- Nagłówek: temat, klasa, imię ucznia
+- Zadania ponumerowane, z miejscem na odpowiedź
+- Różnicowanie: oznacz zadania gwiazdką (*) dla chętnych
+- Na końcu: zadanie kreatywne (otwarte, bez jednej poprawnej odpowiedzi)
 
-Jezyk prosty, instrukcje jednoznaczne.
-Podaj klucz odpowiedzi osobno na koncu.
+Język prosty, instrukcje jednoznaczne.
+Podaj klucz odpowiedzi osobno na końcu.
 ```
 
-### 6. Krzyzowka tematyczna
+### 6. Krzyżówka tematyczna
 
 ```
-Stworz krzyzowke tematyczna na temat [UZUPELNIJ].
+Stwórz krzyżówkę tematyczną na temat [UZUPEŁNIJ].
 
-Poziom: klasa [UZUPELNIJ]
-Liczba hasel: 10-15
-Haslo glowne (pionowe): [UZUPELNIJ LUB "zaproponuj"]
+Poziom: klasa [UZUPEŁNIJ]
+Liczba haseł: 10-15
+Hasło główne (pionowe): [UZUPEŁNIJ LUB "zaproponuj"]
 
 Format:
 1. Podaj definicje/pytania (poziomo i pionowo)
-2. Narysuj siatke krzyzowki (uzyj znakow tekstowych)
+2. Narysuj siatkę krzyżówki (użyj znaków tekstowych)
 3. Podaj klucz odpowiedzi
 
-Definicje napisz jezykiem zrozumialym dla uczniow w tym wieku.
+Definicje napisz językiem zrozumiałym dla uczniów w tym wieku.
 ```
 
 ### 7. Test wielokrotnego wyboru
@@ -131,33 +131,33 @@ Definicje napisz jezykiem zrozumialym dla uczniow w tym wieku.
 ```
 Przygotuj test wielokrotnego wyboru.
 
-Przedmiot: [UZUPELNIJ]
-Temat: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
-Liczba pytan: [UZUPELNIJ]
-Odpowiedzi do kazdego pytania: 4 (A, B, C, D)
+Przedmiot: [UZUPEŁNIJ]
+Temat: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
+Liczba pytań: [UZUPEŁNIJ]
+Odpowiedzi do każdego pytania: 4 (A, B, C, D)
 
 Wymagania:
-- Pytania od latwych do trudnych
-- Kazda odpowiedz niepoprawna musi byc wiarygodna (nie oczywiscie bledna)
-- Na koncu podaj klucz odpowiedzi
+- Pytania od łatwych do trudnych
+- Każda odpowiedź niepoprawna musi być wiarygodna (nie oczywiście błędna)
+- Na końcu podaj klucz odpowiedzi
 - Dodaj system punktacji
 ```
 
 ### 8. Teksty z lukami (cloze test)
 
 ```
-Przygotuj tekst z lukami do uzupelnienia.
+Przygotuj tekst z lukami do uzupełnienia.
 
-Temat: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
-Dlugosc tekstu: ok. [UZUPELNIJ] zdan
+Temat: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
+Długość tekstu: ok. [UZUPEŁNIJ] zdań
 
 Wymagania:
 - Tekst merytoryczny, poprawny naukowo
-- [UZUPELNIJ LICZBA] luk do uzupelnienia
-- Pod tekstem: bank slow (wymieszane odpowiedzi + 2-3 dodatkowe slowa-plapki)
-- Klucz odpowiedzi na koncu
+- [UZUPEŁNIJ LICZBA] luk do uzupełnienia
+- Pod tekstem: bank słów (wymieszane odpowiedzi + 2-3 dodatkowe słowa-pułapki)
+- Klucz odpowiedzi na końcu
 ```
 
 ---
@@ -167,111 +167,111 @@ Wymagania:
 ### 9. Komentarz do pracy ucznia
 
 ```
-Jestes doswiadczonym nauczycielem [UZUPELNIJ PRZEDMIOT].
+Jesteś doświadczonym nauczycielem [UZUPEŁNIJ PRZEDMIOT].
 
 Napisz konstruktywny komentarz do pracy ucznia.
 
 Kontekst:
-- Rodzaj pracy: [UZUPELNIJ - wypracowanie/prezentacja/projekt/praca plastyczna]
-- Ocena: [UZUPELNIJ]
-- Co uczen zrobil dobrze: [UZUPELNIJ KROTKO]
-- Co wymaga poprawy: [UZUPELNIJ KROTKO]
+- Rodzaj pracy: [UZUPEŁNIJ - wypracowanie/prezentacja/projekt/praca plastyczna]
+- Ocena: [UZUPEŁNIJ]
+- Co uczeń zrobił dobrze: [UZUPEŁNIJ KRÓTKO]
+- Co wymaga poprawy: [UZUPEŁNIJ KRÓTKO]
 
 Komentarz powinien:
-- Zaczynac od mocnych stron (co zostalo zrobione dobrze i dlaczego)
-- Wskazywac konkretne obszary do poprawy (nie ogolniki)
-- Dawac wskazowki JAK poprawic (nie tylko CO)
-- Konczyc motywujaco
-- Byc napisany do ucznia (forma "Ty")
-- Dlugosc: 4-6 zdan
+- Zaczynać od mocnych stron (co zostało zrobione dobrze i dlaczego)
+- Wskazywać konkretne obszary do poprawy (nie ogólniki)
+- Dawać wskazówki JAK poprawić (nie tylko CO)
+- Kończyć motywująco
+- Być napisany do ucznia (forma "Ty")
+- Długość: 4-6 zdań
 ```
 
 ### 10. Rubryka oceny prezentacji
 
 ```
-Stworz rubrke oceny prezentacji uczniowskiej.
+Stwórz rubrykę oceny prezentacji uczniowskiej.
 
-Przedmiot: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
+Przedmiot: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
 Skala ocen: 1-6
 
 Kryteria do oceny (min. 5):
-- Merytoryka (poprawnosc, glebokosc)
-- Struktura (wstep, rozwinieciee, zakonczenie)
-- Jezyk (klarownosc, poprawnosc)
-- Prezentacja (kontakt wzrokowy, glos, tempo)
-- Srodki wizualne (slajdy, plakaty, rekwizyty)
+- Merytoryka (poprawność, głębokość)
+- Struktura (wstęp, rozwinięcie, zakończenie)
+- Język (klarowność, poprawność)
+- Prezentacja (kontakt wzrokowy, głos, tempo)
+- Środki wizualne (slajdy, plakaty, rekwizyty)
 
 Format: tabela z kryteriami w wierszach i ocenami 1-6 w kolumnach.
-Dla kazdej komorki napisz krotki opis (co uczen musi zrobic na dana ocene).
+Dla każdej komórki napisz krótki opis (co uczeń musi zrobić na daną ocenę).
 ```
 
 ### 11. Kryteria oceny wypracowania
 
 ```
-Przygotuj kryteria oceny wypracowania z [UZUPELNIJ PRZEDMIOT].
+Przygotuj kryteria oceny wypracowania z [UZUPEŁNIJ PRZEDMIOT].
 
-Temat wypracowania: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
-Forma: [UZUPELNIJ - rozprawka/opowiadanie/opis/recenzja]
+Temat wypracowania: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
+Forma: [UZUPEŁNIJ - rozprawka/opowiadanie/opis/recenzja]
 
-Stworz:
-1. Karte oceny z kryteriami i punktacja
-2. Przykladowe komentarze dla oceny 2, 4 i 6
-3. Wskazowki dla uczniow "Jak napisac na 6"
+Stwórz:
+1. Kartę oceny z kryteriami i punktacją
+2. Przykładowe komentarze dla oceny 2, 4 i 6
+3. Wskazówki dla uczniów "Jak napisać na 6"
 ```
 
 ---
 
 ## D. Komunikacja z rodzicami
 
-### 12. Mail do rodzicow - zebranie
+### 12. Mail do rodziców - zebranie
 
 ```
-Napisz uprzejmy mail do rodzicow z zaproszeniem na zebranie.
+Napisz uprzejmy mail do rodziców z zaproszeniem na zebranie.
 
 Kontekst:
-- Termin: [UZUPELNIJ DATA I GODZINA]
-- Miejsce: [UZUPELNIJ]
-- Glowne tematy: [UZUPELNIJ]
-- Czy jest cos do przygotowania: [UZUPELNIJ]
+- Termin: [UZUPEŁNIJ DATA I GODZINA]
+- Miejsce: [UZUPEŁNIJ]
+- Główne tematy: [UZUPEŁNIJ]
+- Czy jest coś do przygotowania: [UZUPEŁNIJ]
 
-Ton: profesjonalny, ale ciepaly. Krotki (max 10 zdan).
-Dodaj prosbe o potwierdzenie obecnosci.
+Ton: profesjonalny, ale ciepły. Krótki (max 10 zdań).
+Dodaj prośbę o potwierdzenie obecności.
 ```
 
 ### 13. Informacja o wycieczce
 
 ```
-Napisz informacje dla rodzicow o planowanej wycieczce szkolnej.
+Napisz informację dla rodziców o planowanej wycieczce szkolnej.
 
-Szczegoly:
-- Dokad: [UZUPELNIJ]
-- Kiedy: [UZUPELNIJ]
-- Koszt: [UZUPELNIJ]
-- Co uczniowie powinni zabrac: [UZUPELNIJ]
+Szczegóły:
+- Dokąd: [UZUPEŁNIJ]
+- Kiedy: [UZUPEŁNIJ]
+- Koszt: [UZUPEŁNIJ]
+- Co uczniowie powinni zabrać: [UZUPEŁNIJ]
 - Zgoda rodzica potrzebna: tak/nie
 
-Format: krotki mail + formularz zgody do wydrukowania (rodzic podpisuje i oddaje).
+Format: krótki mail + formularz zgody do wydrukowania (rodzic podpisuje i oddaje).
 ```
 
-### 14. Odpowiedz na trudnego maila
+### 14. Odpowiedź na trudnego maila
 
 ```
-Pomoz mi napisac odpowiedz na maila od rodzica.
+Pomóż mi napisać odpowiedź na maila od rodzica.
 
-Sytuacja: [OPISZ KROTKO - np. "rodzic jest niezadowolony z oceny",
-"rodzic pyta dlaczego dziecko dostalo uwage", "rodzic prosi o wyjasnienie"]
+Sytuacja: [OPISZ KRÓTKO - np. "rodzic jest niezadowolony z oceny",
+"rodzic pyta dlaczego dziecko dostało uwagę", "rodzic prosi o wyjaśnienie"]
 
-Tresc maila od rodzica (lub streszczenie):
+Treść maila od rodzica (lub streszczenie):
 [WKLEJ LUB STRESZCZENIE]
 
-Moja odpowiedz powinna:
-- Byc spokojna i profesjonalna
-- Pokazac ze rozumiem perspektywe rodzica
-- Wyjasnic sytuacje z mojego punktu widzenia
-- Zaproponowac rozwiazanie lub spotkanie
-- Dlugosc: max 150 slow
+Moja odpowiedź powinna:
+- Być spokojna i profesjonalna
+- Pokazać że rozumiem perspektywę rodzica
+- Wyjaśnić sytuację z mojego punktu widzenia
+- Zaproponować rozwiązanie lub spotkanie
+- Długość: max 150 słów
 ```
 
 ---
@@ -281,115 +281,115 @@ Moja odpowiedz powinna:
 ### 15. Sprawozdanie z realizacji programu
 
 ```
-Jestes nauczycielem [UZUPELNIJ PRZEDMIOT] w klasie [UZUPELNIJ].
+Jesteś nauczycielem [UZUPEŁNIJ PRZEDMIOT] w klasie [UZUPEŁNIJ].
 
-Napisz sprawozdanie z realizacji programu nauczania za [UZUPELNIJ OKRES].
+Napisz sprawozdanie z realizacji programu nauczania za [UZUPEŁNIJ OKRES].
 
-Uwzglednij:
-1. Stopien realizacji programu (% zrealizowanych tematow)
-2. Osiagniecia uczniow (ogolne, nie indywidualne)
-3. Trudnosci napotkane w realizacji
-4. Metody i formy pracy, ktore sprawdzily sie najlepiej
-5. Wnioski i rekomendacje na nastepny okres
+Uwzględnij:
+1. Stopień realizacji programu (% zrealizowanych tematów)
+2. Osiągnięcia uczniów (ogólne, nie indywidualne)
+3. Trudności napotkane w realizacji
+4. Metody i formy pracy, które sprawdziły się najlepiej
+5. Wnioski i rekomendacje na następny okres
 
-Ton: formalny, rzeczowy. Dlugosc: 1 strona A4.
+Ton: formalny, rzeczowy. Długość: 1 strona A4.
 ```
 
-### 16. Ewaluacja zajec
+### 16. Ewaluacja zajęć
 
 ```
-Przygotuj formularz ewaluacji zajec do wypelnienia przez uczniow.
+Przygotuj formularz ewaluacji zajęć do wypełnienia przez uczniów.
 
-Przedmiot: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
+Przedmiot: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
 
-Formularz powinien zawierac:
-- 5-7 pytan zamknietych (skala 1-5 lub burzki)
+Formularz powinien zawierać:
+- 5-7 pytań zamkniętych (skala 1-5 lub buźki)
 - 2-3 pytania otwarte
-- Pytania o: tempo lekcji, zrozumialosc, ciekawosc, atmosfere, co zmienic
+- Pytania o: tempo lekcji, zrozumiałość, ciekawość, atmosferę, co zmienić
 
-Format: gotowy do wydrukowania (prosty uklad, czytelna czcionka).
-Anonimowy - bez pola na imie.
+Format: gotowy do wydrukowania (prosty układ, czytelna czcionka).
+Anonimowy - bez pola na imię.
 ```
 
 ### 17. Wniosek o dofinansowanie
 
 ```
-Jestes nauczycielem, ktory pisze wniosek o dofinansowanie projektu edukacyjnego.
+Jesteś nauczycielem, który pisze wniosek o dofinansowanie projektu edukacyjnego.
 
-Projekt: [UZUPELNIJ NAZWA I OPIS]
-Dla kogo: uczniowie klasy [UZUPELNIJ]
-Kwota: [UZUPELNIJ]
-Czas trwania: [UZUPELNIJ]
+Projekt: [UZUPEŁNIJ NAZWA I OPIS]
+Dla kogo: uczniowie klasy [UZUPEŁNIJ]
+Kwota: [UZUPEŁNIJ]
+Czas trwania: [UZUPEŁNIJ]
 
 Napisz:
-1. Uzasadnienie potrzeby (dlaczego ten projekt jest wazny)
+1. Uzasadnienie potrzeby (dlaczego ten projekt jest ważny)
 2. Cele projektu (mierzalne)
 3. Plan realizacji (harmonogram)
 4. Spodziewane rezultaty
 5. Kosztorys (rozpisany na pozycje)
 
-Ton: formalny, przekonujacy. Dlugosc: 1-2 strony A4.
+Ton: formalny, przekonujący. Długość: 1-2 strony A4.
 ```
 
 ---
 
-## F. Pomyslownik
+## F. Pomysłownik
 
-### 18. Pomysly na lekcje
+### 18. Pomysły na lekcję
 
 ```
-Podaj 10 kreatywnych pomyslow na lekcje z [UZUPELNIJ PRZEDMIOT]
-na temat [UZUPELNIJ TEMAT] dla klasy [UZUPELNIJ].
+Podaj 10 kreatywnych pomysłów na lekcję z [UZUPEŁNIJ PRZEDMIOT]
+na temat [UZUPEŁNIJ TEMAT] dla klasy [UZUPEŁNIJ].
 
-Dla kazdego pomyslu podaj:
-- Krotki opis (2-3 zdania)
-- Potrzebne materialy
+Dla każdego pomysłu podaj:
+- Krótki opis (2-3 zdania)
+- Potrzebne materiały
 - Przewidywany czas
-- Poziom trudnosci (latwy/sredni/trudny)
+- Poziom trudności (łatwy/średni/trudny)
 
-Uwzglednij rozne formy: praca w grupach, gry, eksperymenty,
-dyskusje, projekty, wycieczki, praca z technologia.
+Uwzględnij różne formy: praca w grupach, gry, eksperymenty,
+dyskusje, projekty, wycieczki, praca z technologią.
 ```
 
 ### 19. Gra dydaktyczna
 
 ```
-Zaprojektuj gre dydaktyczna na lekcje [UZUPELNIJ PRZEDMIOT].
+Zaprojektuj grę dydaktyczną na lekcję [UZUPEŁNIJ PRZEDMIOT].
 
-Temat: [UZUPELNIJ]
-Klasa: [UZUPELNIJ]
-Czas: [UZUPELNIJ] minut
-Liczba graczy/grup: [UZUPELNIJ]
+Temat: [UZUPEŁNIJ]
+Klasa: [UZUPEŁNIJ]
+Czas: [UZUPEŁNIJ] minut
+Liczba graczy/grup: [UZUPEŁNIJ]
 
 Przygotuj:
 1. Zasady gry (proste, jasne, max 5 zasad)
-2. Potrzebne materialy (latwe do przygotowania)
+2. Potrzebne materiały (łatwe do przygotowania)
 3. Przebieg gry krok po kroku
 4. System punktacji
-5. Warianty (wersja latwiejsza i trudniejsza)
+5. Warianty (wersja łatwiejsza i trudniejsza)
 
-Gra musi uczyc - nie moze byc "zabawy dla zabawy".
+Gra musi uczyć - nie może być "zabawy dla zabawy".
 ```
 
-### 20. Projekt miedzyprzedmiotowy
+### 20. Projekt międzyprzedmiotowy
 
 ```
-Zaproponuj projekt miedzyprzedmiotowy laczacy [UZUPELNIJ PRZEDMIOT 1]
-i [UZUPELNIJ PRZEDMIOT 2].
+Zaproponuj projekt międzyprzedmiotowy łączący [UZUPEŁNIJ PRZEDMIOT 1]
+i [UZUPEŁNIJ PRZEDMIOT 2].
 
-Klasa: [UZUPELNIJ]
-Czas: [UZUPELNIJ LICZBA] tygodni
+Klasa: [UZUPEŁNIJ]
+Czas: [UZUPEŁNIJ LICZBA] tygodni
 
 Przygotuj:
-1. Temat przewodni laczacy oba przedmioty
-2. Cele z kazdego przedmiotu
-3. Podzial zadan miedzy przedmioty
-4. Harmonogram (co w ktorym tygodniu)
-5. Efekt koncowy (co uczniowie pokaza/zrobia na zakonczenie)
-6. Kryteria oceny (wspolne)
+1. Temat przewodni łączący oba przedmioty
+2. Cele z każdego przedmiotu
+3. Podział zadań między przedmioty
+4. Harmonogram (co w którym tygodniu)
+5. Efekt końcowy (co uczniowie pokażą/zrobią na zakończenie)
+6. Kryteria oceny (wspólne)
 ```
 
 ---
 
-*Kazdy prompt mozesz dowolnie modyfikowac - dodawaj kontekst, zmieniaj format, dostosowuj do swoich potrzeb. Im wiecej szczegulow podasz, tym lepszy wynik dostaniesz.*
+*Każdy prompt możesz dowolnie modyfikować - dodawaj kontekst, zmieniaj format, dostosowuj do swoich potrzeb. Im więcej szczegółów podasz, tym lepszy wynik dostaniesz.*

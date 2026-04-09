@@ -1,179 +1,179 @@
 # AI dla nauczycieli - Warsztat praktyczny
 
 > Instrukcja krok po kroku. Otwierasz, scrollujesz, robisz.
-> Nie musisz znac sie na technologii - wystarczy przegladarka i ciekawosc.
+> Nie musisz znać się na technologii - wystarczy przeglądarka i ciekawość.
 
 ---
 
-## Jak korzystac z tego repozytorium
+## Jak korzystać z tego repozytorium
 
-### Pobierz materialy
+### Pobierz materiały
 
-1. Kliknij zielony przycisk **"Code"** na gorze tej strony
+1. Kliknij zielony przycisk **"Code"** na górze tej strony
 2. Wybierz **"Download ZIP"**
 3. Rozpakuj pobrany plik na pulpicie
 
-Gotowe - masz folder ze wszystkimi plikami, ktore beda Ci potrzebne.
+Gotowe - masz folder ze wszystkimi plikami, które będą Ci potrzebne.
 
-### Przygotuj narzedzia
+### Przygotuj narzędzia
 
-Otwierz w przegladarce dowolne z tych narzedzi (wszystkie sa darmowe):
+Otwórz w przeglądarce dowolne z tych narzędzi (wszystkie są darmowe):
 
-| Narzedzie | Adres | Do czego | Darmowy limit |
+| Narzędzie | Adres | Do czego | Darmowy limit |
 |-----------|-------|----------|---------------|
-| **ChatGPT** | [chatgpt.com](https://chatgpt.com) | Rozmowa, pomysly, grafika | ~15 wiadomosci / 3h (GPT-4o) |
-| **Claude** | [claude.ai](https://claude.ai) | Dluzsze dokumenty, analiza, precyzja | ~20 wiadomosci / dzien |
-| **Gemini** | [gemini.google.com](https://gemini.google.com) | Research, Google integracja | Praktycznie bez limitu |
-| **NotebookLM** | [notebooklm.google.com](https://notebooklm.google.com) | Analiza dokumentow, podcasty AI | Bez limitu |
+| **ChatGPT** | [chatgpt.com](https://chatgpt.com) | Rozmowa, pomysły, grafika | ~15 wiadomości / 3h (GPT-4o) |
+| **Claude** | [claude.ai](https://claude.ai) | Dłuższe dokumenty, analiza, precyzja | ~20 wiadomości / dzień |
+| **Gemini** | [gemini.google.com](https://gemini.google.com) | Research, integracja z Google | Praktycznie bez limitu |
+| **NotebookLM** | [notebooklm.google.com](https://notebooklm.google.com) | Analiza dokumentów, podcasty AI | Bez limitu |
 
-Wystarczy jedno narzedzie. Jesli nie wiesz ktore - zacznij od **ChatGPT** lub **Gemini**.
+Wystarczy jedno narzędzie. Jeśli nie wiesz które - zacznij od **ChatGPT** lub **Gemini**.
 
-### Jak kopiowac prompty
+### Jak kopiować prompty
 
-W tej instrukcji znajdziesz gotowe prompty w szarych blokach. Wystarczy najechac myszka na blok i kliknac ikonke kopiowania w prawym gornym rogu:
+W tej instrukcji znajdziesz gotowe prompty w szarych blokach. Wystarczy najechać myszką na blok i kliknąć ikonkę kopiowania w prawym górnym rogu:
 
 ```
-Ten tekst mozesz skopiowac jednym kliknieciem
+Ten tekst możesz skopiować jednym kliknięciem
 ```
 
 ---
 
-## Czesc 1: Twoj pierwszy prompt (15 min)
+## Część 1: Twój pierwszy prompt (15 min)
 
-Zacznijmy od czegos konkretnego. Skopiuj ponizszy prompt, wklej do ChatGPT lub Claude i zobacz co sie stanie:
+Zacznijmy od czegoś konkretnego. Skopiuj poniższy prompt, wklej do ChatGPT lub Claude i zobacz co się stanie:
 
 ```
-Jestes doswiadczonym nauczycielem w szkole.
+Jesteś doświadczonym nauczycielem w szkole.
 
 Zadanie: Przygotuj kompletny plan lekcji.
 
 Kontekst:
 - Temat: Fotosynteza
-- Klasa: 6 (szkola podstawowa)
+- Klasa: 6 (szkoła podstawowa)
 - Czas: 45 minut
-- Uczniowie: 25 osob, rozny poziom zaangazowania
-- Dostepne: tablica, projektor, internet
+- Uczniowie: 25 osób, różny poziom zaangażowania
+- Dostępne: tablica, projektor, internet
 
 Format odpowiedzi:
-- Tabela z kolumnami: Czas | Etap lekcji | Co robi nauczyciel | Co robia uczniowie | Materialy
-- Na koncu: 3 pytania sprawdzajace zrozumienie
-- Zadanie domowe (krotkie, max 15 min)
+- Tabela z kolumnami: Czas | Etap lekcji | Co robi nauczyciel | Co robią uczniowie | Materiały
+- Na końcu: 3 pytania sprawdzające zrozumienie
+- Zadanie domowe (krótkie, max 15 min)
 
 Ograniczenia:
-- Max 30% czasu na wyklad (reszta to aktywnosci uczniow)
-- Jezyk prosty, zrozumialy dla 12-latkow
-- Uwzglednij rozne style uczenia sie
+- Max 30% czasu na wykład (reszta to aktywności uczniów)
+- Język prosty, zrozumiały dla 12-latków
+- Uwzględnij różne style uczenia się
 ```
 
-**Dostal plan lekcji w kilka sekund?** Wlasnie tak dziala dobrze napisany prompt.
+**Dostałeś plan lekcji w kilka sekund?** Właśnie tak działa dobrze napisany prompt.
 
 ### Twoja kolej
 
-Zmien w tym prompcie:
-- **Temat** - na swoj przedmiot i temat
-- **Klase** - na swoja
-- **Czas** - na swoj (45, 60, 90 minut)
+Zmień w tym prompcie:
+- **Temat** - na swój przedmiot i temat
+- **Klasę** - na swoją
+- **Czas** - na swój (45, 60, 90 minut)
 
-Skopiuj zmieniony prompt, wklej do narzedzia i porownaj wynik z pierwszym.
+Skopiuj zmieniony prompt, wklej do narzędzia i porównaj wynik z pierwszym.
 
 ---
 
-## Czesc 2: Jak pisac dobre prompty - metoda RZKFO (45 min)
+## Część 2: Jak pisać dobre prompty - metoda RZKFO (45 min)
 
-Ten plan lekcji wyszedl dobrze, bo prompt mial jasna strukture. Ta struktura to **RZKFO**:
+Ten plan lekcji wyszedł dobrze, bo prompt miał jasną strukturę. Ta struktura to **RZKFO**:
 
-| Litera | Co to znaczy | Przyklad |
+| Litera | Co to znaczy | Przykład |
 |--------|-------------|----------|
-| **R** - Rola | Kim ma byc AI | "Jestes doswiadczonym nauczycielem matematyki" |
-| **Z** - Zadanie | Co AI ma zrobic | "Przygotuj 10 zadan z ulamkami" |
-| **K** - Kontekst | Szczegoly sytuacji | "Klasa 7, poziom sredni, przed sprawdzianem" |
-| **F** - Format | Jak ma wygladac wynik | "Tabela: numer, zadanie, odpowiedz, trudnosc" |
-| **O** - Ograniczenia | Czego unikac, limity | "Bez kalkulatora, max 3 dzialania w zadaniu" |
+| **R** - Rola | Kim ma być AI | "Jesteś doświadczonym nauczycielem matematyki" |
+| **Z** - Zadanie | Co AI ma zrobić | "Przygotuj 10 zadań z ułamkami" |
+| **K** - Kontekst | Szczegóły sytuacji | "Klasa 7, poziom średni, przed sprawdzianem" |
+| **F** - Format | Jak ma wyglądać wynik | "Tabela: numer, zadanie, odpowiedź, trudność" |
+| **O** - Ograniczenia | Czego unikać, limity | "Bez kalkulatora, max 3 działania w zadaniu" |
 
-Nie musisz uzywac wszystkich 5 elementow za kazdym razem. Ale im wiecej podasz, tym lepszy bedzie wynik.
+Nie musisz używać wszystkich 5 elementów za każdym razem. Ale im więcej podasz, tym lepszy będzie wynik.
 
-### Cwiczenie 1: Zbuduj wlasny prompt (10 min)
+### Ćwiczenie 1: Zbuduj własny prompt (10 min)
 
-Wybierz jedno zadanie ze swojej codziennej pracy i napisz prompt uzywajac RZKFO:
+Wybierz jedno zadanie ze swojej codziennej pracy i napisz prompt używając RZKFO:
 
 ```
-Rola: Jestes _________________________ [kim?]
+Rola: Jesteś _________________________ [kim?]
 
-Zadanie: _____________________________ [co ma zrobic?]
+Zadanie: _____________________________ [co ma zrobić?]
 
 Kontekst:
 - __________________________________ [klasa, przedmiot, sytuacja]
-- __________________________________ [ile osob, jaki poziom]
-- __________________________________ [dodatkowe okolicznosci]
+- __________________________________ [ile osób, jaki poziom]
+- __________________________________ [dodatkowe okoliczności]
 
 Format odpowiedzi:
-- __________________________________ [tabela, lista, tekst ciagle?]
+- __________________________________ [tabela, lista, tekst ciągły?]
 
 Ograniczenia:
-- __________________________________ [czego unikac, jakie limity]
+- __________________________________ [czego unikać, jakie limity]
 ```
 
-Wklej gotowy prompt do ChatGPT lub Claude. Sprawdz wynik.
+Wklej gotowy prompt do ChatGPT lub Claude. Sprawdź wynik.
 
-### Cwiczenie 2: Popraw slaby prompt (10 min)
+### Ćwiczenie 2: Popraw słaby prompt (10 min)
 
-Ponizszy prompt jest celowo slaby. Skopiuj go, wklej do narzedzia i zobacz wynik:
+Poniższy prompt jest celowo słaby. Skopiuj go, wklej do narzędzia i zobacz wynik:
 
 ```
-Zrob mi cos do lekcji
+Zrób mi coś do lekcji
 ```
 
-Teraz popraw go uzywajac RZKFO i wklej ponownie. Porownaj wyniki - roznica jest ogromna.
+Teraz popraw go używając RZKFO i wklej ponownie. Porównaj wyniki - różnica jest ogromna.
 
-### Cwiczenie 3: Porownaj narzedzia (10 min)
+### Ćwiczenie 3: Porównaj narzędzia (10 min)
 
-Wez swoj najlepszy prompt z Cwiczenia 1 i wklej go kolejno do:
+Weź swój najlepszy prompt z Ćwiczenia 1 i wklej go kolejno do:
 1. **ChatGPT** (chatgpt.com)
 2. **Claude** (claude.ai)
 3. **Gemini** (gemini.google.com)
 
-Ktore narzedzie dalo najlepszy wynik dla Twojego zadania? Kazde ma swoje mocne strony:
+Które narzędzie dało najlepszy wynik dla Twojego zadania? Każde ma swoje mocne strony:
 
-| Narzedzie | Najlepsze do |
+| Narzędzie | Najlepsze do |
 |-----------|-------------|
-| ChatGPT | Szybkie pomysly, burza mozgow, grafika (DALL-E) |
-| Claude | Dlugie dokumenty, precyzyjne instrukcje, analiza tekstu |
+| ChatGPT | Szybkie pomysły, burza mózgów, grafika (DALL-E) |
+| Claude | Długie dokumenty, precyzyjne instrukcje, analiza tekstu |
 | Gemini | Wyszukiwanie informacji, praca z Google Docs, badania |
 
-### Biblioteka gotowych promptow
+### Biblioteka gotowych promptów
 
-Przygotowalismy **20 gotowych promptow** dopasowanych do codziennej pracy nauczyciela. Znajdziesz je tutaj:
+Przygotowaliśmy **20 gotowych promptów** dopasowanych do codziennej pracy nauczyciela. Znajdziesz je tutaj:
 
-**[Pobierz biblioteke promptow](prompty/biblioteka-promptow.md)**
+**[Otwórz bibliotekę promptów](prompty/biblioteka-promptow.md)**
 
-Kazdy prompt jest gotowy do skopiowania - wystarczy uzupelnic miejsca oznaczone `[UZUPELNIJ]`.
+Każdy prompt jest gotowy do skopiowania - wystarczy uzupełnić miejsca oznaczone `[UZUPEŁNIJ]`.
 
 ---
 
-## Czesc 3: AI czyta Twoje dokumenty (60 min)
+## Część 3: AI czyta Twoje dokumenty (60 min)
 
-AI potrafi analizowac pliki - dokumenty Word, arkusze kalkulacyjne, PDF-y, teksty. Wystarczy je wrzucic do rozmowy.
+AI potrafi analizować pliki - dokumenty Word, arkusze kalkulacyjne, PDF-y, teksty. Wystarczy je wrzucić do rozmowy.
 
-### Jak wgrac plik
+### Jak wgrać plik
 
 **W ChatGPT:**
-1. Na dole okna rozmowy kliknij ikonke **spinacza** (po lewej stronie pola tekstowego)
+1. Na dole okna rozmowy kliknij ikonkę **spinacza** (po lewej stronie pola tekstowego)
 2. Wybierz plik z dysku
-3. Plik pojawi sie w oknie - teraz napisz co AI ma z nim zrobic
+3. Plik pojawi się w oknie - teraz napisz co AI ma z nim zrobić
 
 **W Claude:**
-1. Na dole okna kliknij ikonke **spinacza**
+1. Na dole okna kliknij ikonkę **spinacza**
 2. Wybierz plik
 3. Napisz polecenie
 
 **W Gemini:**
-1. Na dole okna kliknij ikonke **+**
+1. Na dole okna kliknij ikonkę **+**
 2. Wybierz "Upload file"
 3. Napisz polecenie
 
-### Cwiczenie 1: Popraw plan lekcji (15 min)
+### Ćwiczenie 1: Popraw plan lekcji (15 min)
 
-W folderze `pliki/` znajdziesz plik **[plan-lekcji.docx](pliki/plan-lekcji.docx)** - to przykladowy plan lekcji, ktory ma kilka slabych punktow.
+W folderze `pliki/` znajdziesz plik **[plan-lekcji.docx](pliki/plan-lekcji.docx)** - to przykładowy plan lekcji, który ma kilka słabych punktów.
 
 1. Wgraj ten plik do ChatGPT lub Claude
 2. Skopiuj i wklej ten prompt:
@@ -181,225 +181,225 @@ W folderze `pliki/` znajdziesz plik **[plan-lekcji.docx](pliki/plan-lekcji.docx)
 ```
 Przeanalizuj ten plan lekcji i:
 
-1. Wskazz 3 mocne strony
-2. Wskazz 3 elementy do poprawy
-3. Zaproponuj poprawiona wersje z uwzglednieniem:
-   - Roznicowania dla uczniow z trudnosciami w nauce
-   - Elementow aktywizujacych (nie tylko wyklad)
-   - Jasnych kryteriow sukcesu dla uczniow
+1. Wskaż 3 mocne strony
+2. Wskaż 3 elementy do poprawy
+3. Zaproponuj poprawioną wersję z uwzględnieniem:
+   - Różnicowania dla uczniów z trudnościami w nauce
+   - Elementów aktywizujących (nie tylko wykład)
+   - Jasnych kryteriów sukcesu dla uczniów
 
 Zachowaj format tabelaryczny.
 ```
 
-3. Przeczytaj odpowiedz - czy AI trafnie zidentyfikowalo slabe punkty?
+3. Przeczytaj odpowiedź - czy AI trafnie zidentyfikowało słabe punkty?
 
-### Cwiczenie 2: Przeanalizuj oceny (15 min)
+### Ćwiczenie 2: Przeanalizuj oceny (15 min)
 
-Wgraj plik **[lista-ocen.csv](pliki/lista-ocen.csv)** - to fikcyjny arkusz z ocenami 30 uczniow z 5 przedmiotow.
+Wgraj plik **[lista-ocen.csv](pliki/lista-ocen.csv)** - to fikcyjny arkusz z ocenami 30 uczniów z 5 przedmiotów.
 
 ```
 Przeanalizuj ten arkusz ocen:
 
-1. Policz srednia ocen kazdego ucznia (po wszystkich przedmiotach)
-2. Zidentyfikuj 5 uczniow z najnizszymi srednimi
-3. Dla kazdego z tych uczniow wskazz przedmiot, w ktorym radzi sobie najlepiej
-4. Napisz krotka notatke (3-4 zdania) dla wychowawcy o kazdym z tych uczniow
+1. Policz średnią ocen każdego ucznia (po wszystkich przedmiotach)
+2. Zidentyfikuj 5 uczniów z najniższymi średnimi
+3. Dla każdego z tych uczniów wskaż przedmiot, w którym radzi sobie najlepiej
+4. Napisz krótką notatkę (3-4 zdania) dla wychowawcy o każdym z tych uczniów
 
-Format: tabela z kolumnami Uczen | Srednia | Najlepszy przedmiot | Notatka
+Format: tabela z kolumnami Uczeń | Średnia | Najlepszy przedmiot | Notatka
 ```
 
-### Cwiczenie 3: Przerob opinie (15 min)
+### Ćwiczenie 3: Przeróbka opinii (15 min)
 
 Wgraj plik **[opinia-ucznia.txt](pliki/opinia-ucznia.txt)** - to nieformalna opinia o uczniu, napisana "na kolanie".
 
 ```
-Przerob te opinie na formalna opinie koncowa zgodna ze standardami szkolnymi:
+Przeróbka tej opinii na formalną opinię końcową zgodną ze standardami szkolnymi:
 
 1. Zachowaj wszystkie informacje merytoryczne
-2. Uzyj profesjonalnego, ale cieplego jezyka
-3. Struktura: postepy w nauce, zachowanie, mocne strony, obszary do rozwoju, rekomendacje
-4. Dlugosc: max 1 strona A4
+2. Użyj profesjonalnego, ale ciepłego języka
+3. Struktura: postępy w nauce, zachowanie, mocne strony, obszary do rozwoju, rekomendacje
+4. Długość: max 1 strona A4
 
-Na koncu zaproponuj 2 alternatywne wersje ostatniego akapitu (rekomendacje).
+Na końcu zaproponuj 2 alternatywne wersje ostatniego akapitu (rekomendacje).
 ```
 
-### WAZNE: Bezpieczenstwo i RODO
+### WAŻNE: Bezpieczeństwo i RODO
 
 > **STOP - przeczytaj zanim wrzucisz cokolwiek do AI**
 
-Co **MOZESZ** wrzucac:
+Co **MOŻESZ** wrzucać:
 - Fikcyjne dane (jak pliki z tego repozytorium)
-- Anonimowe dane (imiona zmienione na "Uczen 1", "Uczen 2")
-- Ogolnodostepne dokumenty (podstawa programowa, podreczniki)
-- Wlasne notatki i plany lekcji
+- Anonimowe dane (imiona zmienione na "Uczeń 1", "Uczeń 2")
+- Ogólnodostępne dokumenty (podstawa programowa, podręczniki)
+- Własne notatki i plany lekcji
 
 Czego **NIE WRZUCAJ**:
-- Prawdziwych imion i nazwisk uczniow
+- Prawdziwych imion i nazwisk uczniów
 - Prawdziwych ocen z dziennika
 - Danych osobowych (PESEL, adresy, telefony)
-- Pytan egzaminacyjnych przed egzaminem
-- Poufnych dokumentow szkolnych
+- Pytań egzaminacyjnych przed egzaminem
+- Poufnych dokumentów szkolnych
 
-**Jak anonimizowac dane?** Przed wrzuceniem do AI zamien imiona na "Uczen 1", "Uczen 2" itd. Mozesz tez poprosic AI o pomoc:
+**Jak anonimizować dane?** Przed wrzuceniem do AI zamień imiona na "Uczeń 1", "Uczeń 2" itd. Możesz też poprosić AI o pomoc:
 
 ```
-Zanim zaczniemy - zamien wszystkie imiona i nazwiska w tym dokumencie
-na fikcyjne (Uczen 1, Uczen 2 itd.). Pokaz mi zanonimizowana wersje,
+Zanim zaczniemy - zamień wszystkie imiona i nazwiska w tym dokumencie
+na fikcyjne (Uczeń 1, Uczeń 2 itd.). Pokaż mi zanonimizowaną wersję,
 a potem pracujmy na niej.
 ```
 
 ---
 
-## Czesc 4: AI jako asystent do czytania (45 min)
+## Część 4: AI jako asystent do czytania (45 min)
 
-Nauczyciele tona w dokumentach - podstawa programowa, regulaminy, metodyki, raporty. AI moze je przeczytac za Ciebie i wyciagnac to, co wazne.
+Nauczyciele toną w dokumentach - podstawa programowa, regulaminy, metodyki, raporty. AI może je przeczytać za Ciebie i wyciągnąć to, co ważne.
 
 ### NotebookLM - Twoja baza wiedzy
 
-NotebookLM to narzedzie Google, ktore pozwala wgrac dokumenty i rozmawiac z nimi jak z ekspertem.
+NotebookLM to narzędzie Google, które pozwala wgrać dokumenty i rozmawiać z nimi jak z ekspertem.
 
-1. Otworz [notebooklm.google.com](https://notebooklm.google.com) (potrzebujesz konta Google)
+1. Otwórz [notebooklm.google.com](https://notebooklm.google.com) (potrzebujesz konta Google)
 2. Kliknij **"New Notebook"** (lub "Nowy notatnik")
-3. Kliknij **"Add source"** (lub "Dodaj zrodlo") i wgraj plik **[artykul-ai-edukacja.md](pliki/artykul-ai-edukacja.md)** z pobranego folderu
-4. Poczekaj az NotebookLM przeanalizuje plik (kilka sekund)
+3. Kliknij **"Add source"** (lub "Dodaj źródło") i wgraj plik **[artykul-ai-edukacja.md](pliki/artykul-ai-edukacja.md)** z pobranego folderu
+4. Poczekaj aż NotebookLM przeanalizuje plik (kilka sekund)
 
-Teraz mozesz zadawac pytania o wgrany dokument:
-
-```
-Jakie sa 3 najwazniejsze wnioski z tego artykulu?
-```
+Teraz możesz zadawać pytania o wgrany dokument:
 
 ```
-Jak moge wykorzystac te informacje na lekcji [UZUPELNIJ PRZEDMIOT]?
+Jakie są 3 najważniejsze wnioski z tego artykułu?
 ```
 
 ```
-Przygotuj 5 pytan do dyskusji na rade pedagogiczna
+Jak mogę wykorzystać te informacje na lekcji [UZUPEŁNIJ PRZEDMIOT]?
+```
+
+```
+Przygotuj 5 pytań do dyskusji na radę pedagogiczną
 na podstawie tego tekstu.
 ```
 
 ### Funkcja wow: Podcast AI
 
-W NotebookLM kliknij **"Audio Overview"** (lub "Podsumowanie audio"). AI wygeneruje **podcast** - dwoch prowadzacych rozmawia o Twoim dokumencie. To trwa ok. 2 minuty generowania, a podcast ma 5-10 minut.
+W NotebookLM kliknij **"Audio Overview"** (lub "Podsumowanie audio"). AI wygeneruje **podcast** - dwóch prowadzących rozmawia o Twoim dokumencie. To trwa ok. 2 minuty generowania, a podcast ma 5-10 minut.
 
-Mozesz tez dodac wytyczne przed wygenerowaniem:
+Możesz też dodać wytyczne przed wygenerowaniem:
 
 ```
-Skup sie na praktycznych zastosowaniach w klasie.
-Mow prostym jezykiem, jakbys tlumaczyl to nauczycielowi,
-ktory dopiero zaczyna przygode z AI.
+Skup się na praktycznych zastosowaniach w klasie.
+Mów prostym językiem, jakbyś tłumaczył to nauczycielowi,
+który dopiero zaczyna przygodę z AI.
 ```
 
 ### Deep Research w Gemini
 
-Gemini ma funkcje "Deep Research", ktora przeszukuje internet i pisze raport.
+Gemini ma funkcję "Deep Research", która przeszukuje internet i pisze raport.
 
-1. Otworz [gemini.google.com](https://gemini.google.com)
-2. Nad polem tekstowym wybierz tryb **"Deep Research"** (jesli dostepny)
+1. Otwórz [gemini.google.com](https://gemini.google.com)
+2. Nad polem tekstowym wybierz tryb **"Deep Research"** (jeśli dostępny)
 3. Wpisz pytanie badawcze, np.:
 
 ```
-Znajdz najnowsze badania (2024-2026) na temat skutecznosci
-wykorzystania sztucznej inteligencji w nauczaniu [UZUPELNIJ PRZEDMIOT]
-w szkole sredniej. Podaj zrodla.
+Znajdź najnowsze badania (2024-2026) na temat skuteczności
+wykorzystania sztucznej inteligencji w nauczaniu [UZUPEŁNIJ PRZEDMIOT]
+w szkole średniej. Podaj źródła.
 ```
 
-Gemini przeszuka kilkadziesiat stron i przygotuje raport z linkami do zrodel. Trwa to 2-3 minuty, ale wynik jest bardzo solidny.
+Gemini przeszuka kilkadziesiąt stron i przygotuje raport z linkami do źródeł. Trwa to 2-3 minuty, ale wynik jest bardzo solidny.
 
 ---
 
-## Czesc 5: Grafika i muzyka AI - szybki przeglad (30 min)
+## Część 5: Grafika i muzyka AI - szybki przegląd (30 min)
 
 ### Grafika w 2 minuty
 
-Najprostszy sposob: bezposrednio w ChatGPT (model DALL-E) lub Gemini.
+Najprostszy sposób: bezpośrednio w ChatGPT (model DALL-E) lub Gemini.
 
 Skopiuj i wklej do ChatGPT:
 
 ```
-Stworz kolorowy plakat edukacyjny na temat [UZUPELNIJ TEMAT]
-dla uczniow klasy [UZUPELNIJ].
-Styl: przyjazny, kreskowkowy, z duzymi czytelnymi napisami.
+Stwórz kolorowy plakat edukacyjny na temat [UZUPEŁNIJ TEMAT]
+dla uczniów klasy [UZUPEŁNIJ].
+Styl: przyjazny, kreskówkowy, z dużymi czytelnymi napisami.
 Format: pionowy, A3.
 ```
 
-Wynik pojawi sie w kilka sekund. Mozesz go pobrac i wydrukowac.
+Wynik pojawi się w kilka sekund. Możesz go pobrać i wydrukować.
 
-Inne narzedzia do grafiki:
+Inne narzędzia do grafiki:
 - **Ideogram** ([ideogram.ai](https://ideogram.ai)) - najlepsze do tekstu na grafikach
-- **Leonardo AI** ([app.leonardo.ai](https://app.leonardo.ai)) - profesjonalne grafiki, 150 tokenow/dzien
+- **Leonardo AI** ([app.leonardo.ai](https://app.leonardo.ai)) - profesjonalne grafiki, 150 tokenów/dzień
 
 ### Muzyka AI
 
-**Suno** ([suno.com](https://suno.com)) generuje muzyke z opisu tekstowego. Darmowe konto daje 5 utworow dziennie.
+**Suno** ([suno.com](https://suno.com)) generuje muzykę z opisu tekstowego. Darmowe konto daje 5 utworów dziennie.
 
 ```
 Spokojna, instrumentalna muzyka do czytania na lekcji.
 Akustyczna gitara, delikatne pianino, bez wokalu.
-Tempo wolne, relaksujace. Dlugosc: 2 minuty.
+Tempo wolne, relaksujące. Długość: 2 minuty.
 ```
 
 ```
-Energiczny jingle na poczatek lekcji, 15 sekund.
+Energiczny jingle na początek lekcji, 15 sekund.
 Optymistyczny, z klaskaniem i gwizdaniem.
 Styl: reklama telewizyjna dla dzieci.
 ```
 
-Wygenerowany utwor mozesz pobrac jako MP3 i puszczac na lekcjach.
+Wygenerowany utwór możesz pobrać jako MP3 i puszczać na lekcjach.
 
 ---
 
-## Czesc 6: Zbuduj wlasna aplikacje - bez programowania (sesja 2)
+## Część 6: Zbuduj własną aplikację - bez programowania (sesja 2)
 
-> Ta czesc bedzie glownym tematem nastepnego spotkania.
-> Ponizej znajdziesz zapowiedz i przyklad do wyprobowania w domu.
+> Ta część będzie głównym tematem następnego spotkania.
+> Poniżej znajdziesz zapowiedź i przykład do wypróbowania w domu.
 
-### Jak to dziala?
+### Jak to działa?
 
-1. Opisujesz AI co ma zbudowac (w prompcie)
+1. Opisujesz AI co ma zbudować (w prompcie)
 2. AI generuje kod (plik HTML)
 3. Zapisujesz go na dysku
-4. Otwierasz w przegladarce
-5. Masz dzialajaca aplikacje
+4. Otwierasz w przeglądarce
+5. Masz działającą aplikację
 
-Zero instalacji. Zero programowania. Plik dziala offline.
+Zero instalacji. Zero programowania. Plik działa offline.
 
-### Sprobuj sam: Timer lekcyjny
+### Spróbuj sam: Timer lekcyjny
 
-Skopiuj ponizszy prompt i wklej do Claude (claude.ai) lub ChatGPT:
+Skopiuj poniższy prompt i wklej do Claude (claude.ai) lub ChatGPT:
 
 ```
-Stworz kompletny plik HTML z timerem lekcyjnym. Wymagania:
+Stwórz kompletny plik HTML z timerem lekcyjnym. Wymagania:
 
-- Duzy, czytelny zegar odliczajacy w centrum ekranu
+- Duży, czytelny zegar odliczający w centrum ekranu
 - Przyciski szybkiego ustawienia: 5 min, 10 min, 15 min, 45 min
-- Mozliwosc wpisania dowolnego czasu
+- Możliwość wpisania dowolnego czasu
 - Przycisk Start / Pauza / Reset
-- Gdy czas minie: ekran zmienia kolor na czerwony + dzwiek powiadomienia
-- Ladny, nowoczesny wyglad (ciemne tlo, duze cyfry)
-- Responsywny - dziala na komputerze i telefonie
-- Calosc w JEDNYM pliku HTML (CSS i JavaScript w srodku)
+- Gdy czas minie: ekran zmienia kolor na czerwony + dźwięk powiadomienia
+- Ładny, nowoczesny wygląd (ciemne tło, duże cyfry)
+- Responsywny - działa na komputerze i telefonie
+- Całość w JEDNYM pliku HTML (CSS i JavaScript w środku)
 - Interfejs po polsku
 ```
 
-Dostaniesz kod. Skopiuj go, otworz Notatnik na komputerze, wklej, zapisz jako `timer.html` i otworz w przegladarce.
+Dostaniesz kod. Skopiuj go, otwórz Notatnik na komputerze, wklej, zapisz jako `timer.html` i otwórz w przeglądarce.
 
-Gotowy przyklad do porownania znajdziesz tutaj: **[aplikacje/timer-lekcyjny.html](aplikacje/timer-lekcyjny.html)**
+Gotowy przykład do porównania znajdziesz tutaj: **[aplikacje/timer-lekcyjny.html](aplikacje/timer-lekcyjny.html)**
 
-### Na nastepnym spotkaniu zbudujemy:
-- **Losowanie uczniow** - wpisujesz imiona, klikasz i kolo fortuny losuje osobe
-- **Generator quizow** - wpisujesz temat, AI tworzy quiz, uczniowie rozwiazuja w przegladarce
+### Na następnym spotkaniu zbudujemy:
+- **Losowanie uczniów** - wpisujesz imiona, klikasz i koło fortuny losuje osobę
+- **Generator quizów** - wpisujesz temat, AI tworzy quiz, uczniowie rozwiązują w przeglądarce
 
 ---
 
 ## Podsumowanie
 
-### Co powinienes miec po szkoleniu:
+### Co powinieneś mieć po szkoleniu:
 
 | # | Co | Gdzie to masz |
 |---|---|---------------|
 | 1 | Plan lekcji wygenerowany przez AI | Skopiowany z ChatGPT/Claude |
-| 2 | 3+ wlasne prompty w formacie RZKFO | Zapisane u siebie |
+| 2 | 3+ własne prompty w formacie RZKFO | Zapisane u siebie |
 | 3 | Poprawiony plan lekcji (z pliku) | W historii rozmowy z AI |
 | 4 | Analiza ocen z fikcyjnego arkusza | W historii rozmowy z AI |
 | 5 | Notatnik w NotebookLM | Na notebooklm.google.com |
@@ -407,30 +407,30 @@ Gotowy przyklad do porownania znajdziesz tutaj: **[aplikacje/timer-lekcyjny.html
 
 ### 3 rzeczy do zrobienia w tym tygodniu
 
-Zapisz sobie 3 konkretne zadania, ktore zrobisz z AI w najblizszych dniach. Np.:
+Zapisz sobie 3 konkretne zadania, które zrobisz z AI w najbliższych dniach. Np.:
 
-1. Przygotuje plan nastepnej lekcji z AI
-2. Wgram arkusz ocen (zanonimizowany!) i poprose o analize
-3. Wygeneruje grafike na tablice
+1. Przygotuj plan następnej lekcji z AI
+2. Wgraj arkusz ocen (zanonimizowany!) i poproś o analizę
+3. Wygeneruj grafikę na tablicę
 
-**Im szybciej zaczniesz uzywac AI w codziennej pracy, tym szybciej zobaczysz efekty.**
+**Im szybciej zaczniesz używać AI w codziennej pracy, tym szybciej zobaczysz efekty.**
 
 ---
 
-## Przydatne linki i narzedzia
+## Przydatne linki i narzędzia
 
-| Narzedzie | Do czego | Link | Darmowe |
+| Narzędzie | Do czego | Link | Darmowe |
 |-----------|----------|------|---------|
-| ChatGPT | Rozmowa, pomysly, grafika | [chatgpt.com](https://chatgpt.com) | Tak (z limitem) |
+| ChatGPT | Rozmowa, pomysły, grafika | [chatgpt.com](https://chatgpt.com) | Tak (z limitem) |
 | Claude | Dokumenty, analiza, precyzja | [claude.ai](https://claude.ai) | Tak (z limitem) |
-| Gemini | Research, Google integracja | [gemini.google.com](https://gemini.google.com) | Tak |
-| NotebookLM | Analiza dokumentow, podcasty | [notebooklm.google.com](https://notebooklm.google.com) | Tak |
-| Google AI Studio | Zaawansowane AI, dlugie dokumenty | [aistudio.google.com](https://aistudio.google.com) | Tak |
+| Gemini | Research, integracja z Google | [gemini.google.com](https://gemini.google.com) | Tak |
+| NotebookLM | Analiza dokumentów, podcasty | [notebooklm.google.com](https://notebooklm.google.com) | Tak |
+| Google AI Studio | Zaawansowane AI, długie dokumenty | [aistudio.google.com](https://aistudio.google.com) | Tak |
 | Ideogram | Grafika z tekstem | [ideogram.ai](https://ideogram.ai) | Tak (z limitem) |
-| Leonardo AI | Profesjonalne grafiki | [app.leonardo.ai](https://app.leonardo.ai) | 150 tokenow/dzien |
-| Suno | Muzyka z opisu | [suno.com](https://suno.com) | 5 utworow/dzien |
+| Leonardo AI | Profesjonalne grafiki | [app.leonardo.ai](https://app.leonardo.ai) | 150 tokenów/dzień |
+| Suno | Muzyka z opisu | [suno.com](https://suno.com) | 5 utworów/dzień |
 | Canva | Edycja grafik, prezentacje | [canva.com](https://canva.com) | Tak |
 
 ---
 
-*Materialy przygotowane na warsztat praktyczny z AI dla nauczycieli.*
+*Materiały przygotowane na warsztat praktyczny z AI dla nauczycieli.*
