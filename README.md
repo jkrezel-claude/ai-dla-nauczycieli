@@ -1,4 +1,4 @@
-# AI dla nauczycieli - Warsztat praktyczny
+# AI dla nauczycieli - Podstawy
 
 > Instrukcja krok po kroku. Otwierasz, scrollujesz, robisz.
 > Nie musisz znać się na technologii - wystarczy przeglądarka i ciekawość.
@@ -373,7 +373,29 @@ Każde z poniższych ćwiczeń działa tak samo:
 8. Zapisz na pulpicie
 9. Kliknij dwukrotnie na zapisany plik - otworzy się w przeglądarce
 
-Jeśli coś nie działa albo chcesz zmienić wygląd - napisz AI co poprawić, np. "Zmień kolor tła na biały" lub "Dodaj przycisk 20 minut". AI poprawi kod, Ty go znowu kopiujesz i zapisujesz.
+### Jak poprawiać i ulepszać aplikację
+
+Pierwsza wersja nie musi być idealna. Wróć do tego samego czatu z AI i napisz co chcesz zmienić. Przykłady:
+
+**Wygląd:**
+- "Zmień kolor tła na biały"
+- "Zrób większe przyciski"
+- "Zmień czcionkę na bardziej okrągłą, przyjazną"
+- "Dodaj logo mojej szkoły na górze"
+
+**Funkcje:**
+- "Dodaj przycisk 20 minut"
+- "Dodaj możliwość losowania grup 3-osobowych"
+- "Po zakończeniu quizu pokaż które odpowiedzi były poprawne"
+
+**Poprawki:**
+- "Przycisk nie działa na telefonie - napraw"
+- "Tekst jest za mały na projektorze - powiększ"
+- "Dźwięk jest za głośny - ścisz albo dodaj suwak głośności"
+
+AI poprawi kod. Ty kopiujesz nową wersję, zapisujesz jako ten sam plik `.html` (nadpisując stary) i odświeżasz stronę w przeglądarce.
+
+Możesz tak poprawiać wielokrotnie - każda kolejna wersja będzie bliższa temu, czego potrzebujesz. To się nazywa **iteracja** i jest naturalnym sposobem pracy z AI.
 
 ### Aplikacja 1: Timer lekcyjny
 
@@ -517,4 +539,4 @@ Zapisz sobie 3 konkretne zadania, które zrobisz z AI w najbliższych dniach. Np
 
 ---
 
-*Materiały przygotowane na warsztat praktyczny z AI dla nauczycieli.*
+*Materiały przygotowane dla nauczycieli.*
