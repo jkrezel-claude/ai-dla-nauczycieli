@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Losowanie uczniow</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #0f0f23;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 25px;
+            color: #888;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .main-container {
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            max-width: 900px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .wheel-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .canvas-container {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        canvas {
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(83, 52, 131, 0.3);
+        }
+
+        .pointer {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 25px solid #e74c3c;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+            z-index: 10;
+        }
+
+        .result {
+            font-size: 2.5rem;
+            font-weight: 600;
+            min-height: 60px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f1c40f;
+        }
+
+        .spin-btn {
+            background: linear-gradient(135deg, #533483, #0f3460);
+            border: none;
+            color: white;
+            padding: 16px 50px;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .spin-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(83, 52, 131, 0.5); }
+        .spin-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+        .names-section {
+            flex: 0 0 280px;
+        }
+
+        .names-section h2 {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            background: #16213e;
+            border: 1px solid #0f3460;
+            border-radius: 8px;
+            color: #eee;
+            padding: 12px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            resize: vertical;
+            line-height: 1.6;
+        }
+
+        textarea::placeholder { color: #555; }
+
+        .btn-small {
+            background: #16213e;
+            border: 1px solid #0f3460;
+            color: #eee;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: all 0.2s;
+        }
+
+        .btn-small:hover { background: #0f3460; }
+
+        .history {
+            margin-top: 25px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .history h2 {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .history-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .history-item {
+            background: #16213e;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #aaa;
+        }
+
+        .history-item:first-child {
+            color: #f1c40f;
+            border: 1px solid #f1c40f33;
+        }
+
+        @media (max-width: 600px) {
+            .main-container { flex-direction: column-reverse; }
+            canvas { width: 280px !important; height: 280px !important; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Losowanie uczniow</h1>
+
+    <div class="main-container">
+        <div class="wheel-section">
+            <div class="canvas-container">
+                <div class="pointer"></div>
+                <canvas id="wheel" width="340" height="340"></canvas>
+            </div>
+
+            <div class="result" id="result"></div>
+
+            <button class="spin-btn" id="spinBtn" onclick="spin()">Losuj!</button>
+        </div>
+
+        <div class="names-section">
+            <h2>Lista uczniow (jedno imie na linie):</h2>
+            <textarea id="namesInput" placeholder="Anna
+Bartek
+Celina
+Dawid
+Ewa
+Filip
+Gosia
+Hubert
+Iga
+Jakub">Anna
+Bartek
+Celina
+Dawid
+Ewa
+Filip
+Gosia
+Hubert
+Iga
+Jakub</textarea>
+            <button class="btn-small" onclick="updateWheel()">Zaktualizuj kolo</button>
+            <button class="btn-small" onclick="clearHistory()">Wyczysc historie</button>
+        </div>
+    </div>
+
+    <div class="history" id="historySection" style="display:none">
+        <h2>Wylosowani:</h2>
+        <div class="history-list" id="historyList"></div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('wheel');
+        const ctx = canvas.getContext('2d');
+        let names = [];
+        let rotation = 0;
+        let isSpinning = false;
+        let history = [];
+
+        const colors = [
+            '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+            '#1abc9c', '#e67e22', '#533483', '#16a085', '#c0392b',
+            '#2980b9', '#27ae60', '#f1c40f', '#8e44ad', '#d35400',
+            '#0f3460', '#e74c3c', '#3498db', '#2ecc71', '#f39c12'
+        ];
+
+        function getNames() {
+            return document.getElementById('namesInput').value
+                .split('\n')
+                .map(n => n.trim())
+                .filter(n => n.length > 0);
+        }
+
+        function drawWheel() {
+            names = getNames();
+            if (names.length === 0) return;
+
+            const cx = canvas.width / 2;
+            const cy = canvas.height / 2;
+            const r = cx - 10;
+            const sliceAngle = (2 * Math.PI) / names.length;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            names.forEach((name, i) => {
+                const startAngle = rotation + i * sliceAngle;
+                const endAngle = startAngle + sliceAngle;
+
+                // Slice
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.arc(cx, cy, r, startAngle, endAngle);
+                ctx.closePath();
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.fill();
+                ctx.strokeStyle = '#0f0f23';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Text
+                ctx.save();
+                ctx.translate(cx, cy);
+                ctx.rotate(startAngle + sliceAngle / 2);
+                ctx.textAlign = 'right';
+                ctx.fillStyle = 'white';
+                ctx.font = `${Math.min(16, 200 / names.length)}px 'Segoe UI', sans-serif`;
+                ctx.fillText(name, r - 15, 5);
+                ctx.restore();
+            });
+
+            // Center circle
+            ctx.beginPath();
+            ctx.arc(cx, cy, 20, 0, 2 * Math.PI);
+            ctx.fillStyle = '#0f0f23';
+            ctx.fill();
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        }
+
+        function spin() {
+            if (isSpinning) return;
+            names = getNames();
+            if (names.length === 0) return;
+
+            isSpinning = true;
+            document.getElementById('spinBtn').disabled = true;
+            document.getElementById('result').textContent = '';
+
+            const spinAngle = Math.random() * 2 * Math.PI + 8 * Math.PI + Math.random() * 4 * Math.PI;
+            const duration = 4000;
+            const start = performance.now();
+            const startRotation = rotation;
+
+            function animate(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+
+                // Ease out cubic
+                const ease = 1 - Math.pow(1 - progress, 3);
+                rotation = startRotation + spinAngle * ease;
+
+                drawWheel();
+
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                } else {
+                    isSpinning = false;
+                    document.getElementById('spinBtn').disabled = false;
+
+                    // Determine winner
+                    const sliceAngle = (2 * Math.PI) / names.length;
+                    const normalizedRotation = ((2 * Math.PI) - (rotation % (2 * Math.PI))) % (2 * Math.PI);
+                    // Pointer is at top (270 degrees = 3*PI/2)
+                    const pointerAngle = (normalizedRotation + Math.PI / 2) % (2 * Math.PI);
+                    const winnerIndex = Math.floor(pointerAngle / sliceAngle) % names.length;
+                    const winner = names[winnerIndex];
+
+                    document.getElementById('result').textContent = winner;
+
+                    // Add to history
+                    history.unshift(winner);
+                    updateHistory();
+
+                    // Play sound
+                    try {
+                        const actx = new (window.AudioContext || window.webkitAudioContext)();
+                        const osc = actx.createOscillator();
+                        const gain = actx.createGain();
+                        osc.connect(gain);
+                        gain.connect(actx.destination);
+                        osc.frequency.value = 523;
+                        osc.type = 'sine';
+                        gain.gain.setValueAtTime(0.3, actx.currentTime);
+                        gain.gain.exponentialRampToValueAtTime(0.01, actx.currentTime + 0.5);
+                        osc.start();
+                        osc.stop(actx.currentTime + 0.5);
+                    } catch(e) {}
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        function updateHistory() {
+            const section = document.getElementById('historySection');
+            const list = document.getElementById('historyList');
+
+            if (history.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+
+            section.style.display = 'block';
+            list.innerHTML = history
+                .map(name => `<span class="history-item">${name}</span>`)
+                .join('');
+        }
+
+        function clearHistory() {
+            history = [];
+            updateHistory();
+            document.getElementById('result').textContent = '';
+        }
+
+        function updateWheel() {
+            drawWheel();
+        }
+
+        // Initialize
+        drawWheel();
+    </script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer lekcyjny</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: #888;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .timer-display {
+            font-size: clamp(4rem, 15vw, 10rem);
+            font-weight: 200;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 4px;
+            margin: 20px 0 40px;
+            transition: color 0.3s;
+        }
+
+        .timer-display.warning { color: #f39c12; }
+        .timer-display.danger { color: #e74c3c; animation: pulse 1s infinite; }
+        .timer-display.finished { color: #e74c3c; animation: pulse 0.5s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .preset-buttons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .preset-btn {
+            background: #16213e;
+            border: 1px solid #0f3460;
+            color: #eee;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .preset-btn:hover { background: #0f3460; transform: translateY(-2px); }
+        .preset-btn.active { background: #533483; border-color: #533483; }
+
+        .custom-time {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .custom-time input {
+            background: #16213e;
+            border: 1px solid #0f3460;
+            color: #eee;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            width: 80px;
+            text-align: center;
+        }
+
+        .custom-time label {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .control-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .control-btn {
+            padding: 14px 36px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .control-btn:hover { transform: translateY(-2px); }
+
+        .btn-start { background: #27ae60; color: white; }
+        .btn-start:hover { background: #2ecc71; }
+        .btn-pause { background: #f39c12; color: white; }
+        .btn-pause:hover { background: #f1c40f; }
+        .btn-reset { background: #e74c3c; color: white; }
+        .btn-reset:hover { background: #c0392b; }
+
+        .finished-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(231, 76, 60, 0.15);
+            pointer-events: none;
+            animation: flashBg 1s infinite;
+        }
+
+        .finished-overlay.show { display: block; }
+
+        @keyframes flashBg {
+            0%, 100% { background: rgba(231, 76, 60, 0.05); }
+            50% { background: rgba(231, 76, 60, 0.2); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            max-width: 500px;
+            height: 6px;
+            background: #16213e;
+            border-radius: 3px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #533483;
+            border-radius: 3px;
+            transition: width 1s linear;
+            width: 100%;
+        }
+
+        .progress-fill.warning { background: #f39c12; }
+        .progress-fill.danger { background: #e74c3c; }
+    </style>
+</head>
+<body>
+    <h1>Timer lekcyjny</h1>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="timer-display" id="timerDisplay">00:00</div>
+
+    <div class="preset-buttons">
+        <button class="preset-btn" onclick="setTime(1)">1 min</button>
+        <button class="preset-btn" onclick="setTime(5)">5 min</button>
+        <button class="preset-btn" onclick="setTime(10)">10 min</button>
+        <button class="preset-btn" onclick="setTime(15)">15 min</button>
+        <button class="preset-btn" onclick="setTime(45)">45 min</button>
+    </div>
+
+    <div class="custom-time">
+        <label>Wlasny czas:</label>
+        <input type="number" id="customMinutes" placeholder="min" min="0" max="180">
+        <label>min</label>
+        <input type="number" id="customSeconds" placeholder="sek" min="0" max="59">
+        <label>sek</label>
+        <button class="preset-btn" onclick="setCustomTime()">Ustaw</button>
+    </div>
+
+    <div class="control-buttons">
+        <button class="control-btn btn-start" id="startBtn" onclick="startTimer()">Start</button>
+        <button class="control-btn btn-pause" id="pauseBtn" onclick="pauseTimer()" style="display:none">Pauza</button>
+        <button class="control-btn btn-reset" onclick="resetTimer()">Reset</button>
+    </div>
+
+    <div class="finished-overlay" id="finishedOverlay"></div>
+
+    <script>
+        let totalSeconds = 0;
+        let remainingSeconds = 0;
+        let intervalId = null;
+        let isRunning = false;
+
+        function setTime(minutes) {
+            resetTimer();
+            totalSeconds = minutes * 60;
+            remainingSeconds = totalSeconds;
+            updateDisplay();
+
+            document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function setCustomTime() {
+            const min = parseInt(document.getElementById('customMinutes').value) || 0;
+            const sec = parseInt(document.getElementById('customSeconds').value) || 0;
+            if (min === 0 && sec === 0) return;
+
+            resetTimer();
+            totalSeconds = min * 60 + sec;
+            remainingSeconds = totalSeconds;
+            updateDisplay();
+
+            document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+        }
+
+        function startTimer() {
+            if (remainingSeconds <= 0) return;
+            if (isRunning) return;
+
+            isRunning = true;
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('pauseBtn').style.display = 'inline-block';
+
+            intervalId = setInterval(() => {
+                remainingSeconds--;
+                updateDisplay();
+
+                if (remainingSeconds <= 0) {
+                    clearInterval(intervalId);
+                    isRunning = false;
+                    timerFinished();
+                }
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            if (!isRunning) return;
+
+            clearInterval(intervalId);
+            isRunning = false;
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('pauseBtn').style.display = 'none';
+        }
+
+        function resetTimer() {
+            clearInterval(intervalId);
+            isRunning = false;
+            remainingSeconds = totalSeconds;
+
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('pauseBtn').style.display = 'none';
+            document.getElementById('finishedOverlay').classList.remove('show');
+            document.getElementById('timerDisplay').className = 'timer-display';
+            document.getElementById('progressFill').className = 'progress-fill';
+
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            const min = Math.floor(remainingSeconds / 60);
+            const sec = remainingSeconds % 60;
+            const display = document.getElementById('timerDisplay');
+            const progress = document.getElementById('progressFill');
+
+            display.textContent =
+                String(min).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+
+            // Progress bar
+            const pct = totalSeconds > 0 ? (remainingSeconds / totalSeconds) * 100 : 100;
+            progress.style.width = pct + '%';
+
+            // Color states
+            display.className = 'timer-display';
+            progress.className = 'progress-fill';
+
+            if (totalSeconds > 0) {
+                const ratio = remainingSeconds / totalSeconds;
+                if (ratio <= 0.1) {
+                    display.classList.add('danger');
+                    progress.classList.add('danger');
+                } else if (ratio <= 0.25) {
+                    display.classList.add('warning');
+                    progress.classList.add('warning');
+                }
+            }
+        }
+
+        function timerFinished() {
+            document.getElementById('timerDisplay').className = 'timer-display finished';
+            document.getElementById('finishedOverlay').classList.add('show');
+            document.getElementById('startBtn').style.display = 'inline-block';
+            document.getElementById('pauseBtn').style.display = 'none';
+
+            // Play sound
+            try {
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                [0, 0.3, 0.6].forEach(delay => {
+                    const osc = ctx.createOscillator();
+                    const gain = ctx.createGain();
+                    osc.connect(gain);
+                    gain.connect(ctx.destination);
+                    osc.frequency.value = 880;
+                    osc.type = 'sine';
+                    gain.gain.setValueAtTime(0.3, ctx.currentTime + delay);
+                    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + delay + 0.25);
+                    osc.start(ctx.currentTime + delay);
+                    osc.stop(ctx.currentTime + delay + 0.25);
+                });
+            } catch(e) {}
+        }
+
+        // Initialize
+        updateDisplay();
+    </script>
+</body>
+</html>
