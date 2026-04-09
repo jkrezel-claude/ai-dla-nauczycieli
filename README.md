@@ -38,7 +38,7 @@ Ten tekst możesz skopiować jednym kliknięciem
 
 ---
 
-## Część 1: Twój pierwszy prompt (15 min)
+## Część 1: Twój pierwszy prompt
 
 Zacznijmy od czegoś konkretnego. Skopiuj poniższy prompt, wklej do ChatGPT lub Claude i zobacz co się stanie:
 
@@ -78,7 +78,7 @@ Skopiuj zmieniony prompt, wklej do narzędzia i porównaj wynik z pierwszym.
 
 ---
 
-## Część 2: Jak pisać dobre prompty - metoda RZKFO (45 min)
+## Część 2: Jak pisać dobre prompty - metoda RZKFO
 
 Ten plan lekcji wyszedł dobrze, bo prompt miał jasną strukturę. Ta struktura to **RZKFO**:
 
@@ -92,7 +92,7 @@ Ten plan lekcji wyszedł dobrze, bo prompt miał jasną strukturę. Ta struktura
 
 Nie musisz używać wszystkich 5 elementów za każdym razem. Ale im więcej podasz, tym lepszy będzie wynik.
 
-### Ćwiczenie 1: Zbuduj własny prompt (10 min)
+### Ćwiczenie 1: Zbuduj własny prompt
 
 Wybierz jedno zadanie ze swojej codziennej pracy i napisz prompt używając RZKFO:
 
@@ -115,7 +115,7 @@ Ograniczenia:
 
 Wklej gotowy prompt do ChatGPT lub Claude. Sprawdź wynik.
 
-### Ćwiczenie 2: Popraw słaby prompt (10 min)
+### Ćwiczenie 2: Popraw słaby prompt
 
 Poniższy prompt jest celowo słaby. Skopiuj go, wklej do narzędzia i zobacz wynik:
 
@@ -125,7 +125,7 @@ Zrób mi coś do lekcji
 
 Teraz popraw go używając RZKFO i wklej ponownie. Porównaj wyniki - różnica jest ogromna.
 
-### Ćwiczenie 3: Porównaj narzędzia (10 min)
+### Ćwiczenie 3: Porównaj narzędzia
 
 Weź swój najlepszy prompt z Ćwiczenia 1 i wklej go kolejno do:
 1. **ChatGPT** (chatgpt.com)
@@ -150,7 +150,7 @@ Każdy prompt jest gotowy do skopiowania - wystarczy uzupełnić miejsca oznaczo
 
 ---
 
-## Część 3: AI czyta Twoje dokumenty (60 min)
+## Część 3: AI czyta Twoje dokumenty
 
 AI potrafi analizować pliki - dokumenty Word, arkusze kalkulacyjne, PDF-y, teksty. Wystarczy je wrzucić do rozmowy.
 
@@ -171,7 +171,7 @@ AI potrafi analizować pliki - dokumenty Word, arkusze kalkulacyjne, PDF-y, teks
 2. Wybierz "Upload file"
 3. Napisz polecenie
 
-### Ćwiczenie 1: Popraw plan lekcji (15 min)
+### Ćwiczenie 1: Popraw plan lekcji
 
 W folderze `pliki/` znajdziesz plik **[plan-lekcji.docx](pliki/plan-lekcji.docx)** - to przykładowy plan lekcji, który ma kilka słabych punktów.
 
@@ -193,7 +193,7 @@ Zachowaj format tabelaryczny.
 
 3. Przeczytaj odpowiedź - czy AI trafnie zidentyfikowało słabe punkty?
 
-### Ćwiczenie 2: Przeanalizuj oceny (15 min)
+### Ćwiczenie 2: Przeanalizuj oceny
 
 Wgraj plik **[lista-ocen.csv](pliki/lista-ocen.csv)** - to fikcyjny arkusz z ocenami 30 uczniów z 5 przedmiotów.
 
@@ -208,7 +208,7 @@ Przeanalizuj ten arkusz ocen:
 Format: tabela z kolumnami Uczeń | Średnia | Najlepszy przedmiot | Notatka
 ```
 
-### Ćwiczenie 3: Przeróbka opinii (15 min)
+### Ćwiczenie 3: Przeróbka opinii
 
 Wgraj plik **[opinia-ucznia.txt](pliki/opinia-ucznia.txt)** - to nieformalna opinia o uczniu, napisana "na kolanie".
 
@@ -248,7 +248,7 @@ Jeśli chcesz pokazać innym wynik pracy AI (np. na radzie pedagogicznej), ale w
 
 ---
 
-## Część 4: AI jako asystent do czytania (45 min)
+## Część 4: AI jako asystent do czytania
 
 Nauczyciele toną w dokumentach - podstawa programowa, regulaminy, metodyki, raporty. AI może je przeczytać za Ciebie i wyciągnąć to, co ważne.
 
@@ -306,7 +306,7 @@ Gemini przeszuka kilkadziesiąt stron i przygotuje raport z linkami do źródeł
 
 ---
 
-## Część 5: Grafika i muzyka AI - szybki przegląd (30 min)
+## Część 5: Grafika i muzyka AI - szybki przegląd
 
 ### Grafika w 2 minuty
 
