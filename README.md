@@ -240,13 +240,11 @@ Czego **NIE WRZUCAJ**:
 - Pytań egzaminacyjnych przed egzaminem
 - Poufnych dokumentów szkolnych
 
-**Jak anonimizować dane?** Przed wrzuceniem do AI zamień imiona na "Uczeń 1", "Uczeń 2" itd. Możesz też poprosić AI o pomoc:
+**Jak anonimizować dane?** Zamień imiona i nazwiska **ZANIM** wrzucisz plik do AI. Zrób to samodzielnie - w Wordzie, Excelu lub Notatniku podmień dane na "Uczeń 1", "Uczeń 2" itd. Dopiero zanonimizowany plik wgraj do ChatGPT, Claude czy Gemini.
 
-```
-Zanim zaczniemy - zamień wszystkie imiona i nazwiska w tym dokumencie
-na fikcyjne (Uczeń 1, Uczeń 2 itd.). Pokaż mi zanonimizowaną wersję,
-a potem pracujmy na niej.
-```
+Nie proś AI o anonimizację - w momencie wgrania pliku z prawdziwymi danymi, AI już je "zobaczyło". To tak jakby dać komuś dokument z danymi uczniów i poprosić "zapomnij co przeczytałeś".
+
+Jeśli chcesz pokazać innym wynik pracy AI (np. na radzie pedagogicznej), ale w oryginalnym dokumencie były prawdziwe dane - wtedy możesz poprosić AI o podmianę imion w **wygenerowanej odpowiedzi**. Ale sam dokument źródłowy musi być zanonimizowany przed wgraniem.
 
 ---
 
