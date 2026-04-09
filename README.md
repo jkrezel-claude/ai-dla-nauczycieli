@@ -38,7 +38,7 @@ Ten tekst możesz skopiować jednym kliknięciem
 
 ---
 
-## Twój pierwszy prompt
+## Część 1: Twój pierwszy prompt
 
 Zacznijmy od czegoś konkretnego. Skopiuj poniższy prompt, wklej do ChatGPT lub Claude i zobacz co się stanie:
 
@@ -78,7 +78,7 @@ Skopiuj zmieniony prompt, wklej do narzędzia i porównaj wynik z pierwszym.
 
 ---
 
-## Jak pisać dobre prompty - metoda RZKFO
+## Część 2: Jak pisać dobre prompty - metoda RZKFO
 
 Ten plan lekcji wyszedł dobrze, bo prompt miał jasną strukturę. Ta struktura to **RZKFO**:
 
@@ -150,7 +150,7 @@ Każdy prompt jest gotowy do skopiowania - wystarczy uzupełnić miejsca oznaczo
 
 ---
 
-## AI czyta Twoje dokumenty
+## Część 3: AI czyta Twoje dokumenty
 
 AI potrafi analizować pliki - dokumenty Word, arkusze kalkulacyjne, PDF-y, teksty. Wystarczy je wrzucić do rozmowy.
 
@@ -248,7 +248,7 @@ Jeśli chcesz pokazać innym wynik pracy AI (np. na radzie pedagogicznej), ale w
 
 ---
 
-## AI jako asystent do czytania
+## Część 4: AI jako asystent do czytania
 
 Nauczyciele toną w dokumentach - podstawa programowa, regulaminy, metodyki, raporty. AI może je przeczytać za Ciebie i wyciągnąć to, co ważne.
 
@@ -306,7 +306,7 @@ Gemini przeszuka kilkadziesiąt stron i przygotuje raport z linkami do źródeł
 
 ---
 
-## Grafika i muzyka AI
+## Część 5: Grafika i muzyka AI
 
 ### Grafika w 2 minuty
 
@@ -347,7 +347,7 @@ Wygenerowany utwór możesz pobrać jako MP3 i puszczać na lekcjach.
 
 ---
 
-## Zbuduj własną aplikację - bez programowania
+## Część 6: Zbuduj własną aplikację - bez programowania
 
 ### Jak to działa?
 
@@ -359,9 +359,25 @@ Wygenerowany utwór możesz pobrać jako MP3 i puszczać na lekcjach.
 
 Zero instalacji. Zero programowania. Plik działa offline.
 
-### Spróbuj sam: Timer lekcyjny
+### Jak zapisać kod jako aplikację
 
-Skopiuj poniższy prompt i wklej do Claude (claude.ai) lub ChatGPT:
+Każde z poniższych ćwiczeń działa tak samo:
+
+1. Skopiuj prompt i wklej do **Claude** (claude.ai) lub **ChatGPT** (chatgpt.com)
+2. AI wygeneruje kod - skopiuj **cały** kod
+3. Otwórz **Notatnik** na komputerze (Start → wpisz "Notatnik")
+4. Wklej kod do Notatnika
+5. Kliknij **Plik → Zapisz jako**
+6. Na dole okna zmień "Typ pliku" na **Wszystkie pliki (*.*)**
+7. Wpisz nazwę z końcówką `.html` - np. `timer.html`
+8. Zapisz na pulpicie
+9. Kliknij dwukrotnie na zapisany plik - otworzy się w przeglądarce
+
+Jeśli coś nie działa albo chcesz zmienić wygląd - napisz AI co poprawić, np. "Zmień kolor tła na biały" lub "Dodaj przycisk 20 minut". AI poprawi kod, Ty go znowu kopiujesz i zapisujesz.
+
+### Aplikacja 1: Timer lekcyjny
+
+Skopiuj poniższy prompt:
 
 ```
 Stwórz kompletny plik HTML z timerem lekcyjnym. Wymagania:
@@ -377,19 +393,89 @@ Stwórz kompletny plik HTML z timerem lekcyjnym. Wymagania:
 - Interfejs po polsku
 ```
 
-Dostaniesz kod. Skopiuj go, otwórz Notatnik na komputerze, wklej, zapisz jako `timer.html` i otwórz w przeglądarce.
+Zapisz kod jako `timer.html` i otwórz w przeglądarce.
 
-Gotowy przykład do porównania znajdziesz tutaj: **[aplikacje/timer-lekcyjny.html](aplikacje/timer-lekcyjny.html)**
+Gotowy przykład do porównania: **[aplikacje/timer-lekcyjny.html](aplikacje/timer-lekcyjny.html)**
 
-### Na następnym spotkaniu zbudujemy:
-- **Losowanie uczniów** - wpisujesz imiona, klikasz i koło fortuny losuje osobę
-- **Generator quizów** - wpisujesz temat, AI tworzy quiz, uczniowie rozwiązują w przeglądarce
+### Aplikacja 2: Losowanie uczniów
+
+Ta aplikacja losuje osobę z listy - z animacją koła fortuny. Wpisujesz imiona uczniów, klikasz "Losuj" i koło się kręci.
+
+Skopiuj poniższy prompt:
+
+```
+Stwórz kompletny plik HTML z aplikacją do losowania uczniów. Wymagania:
+
+Funkcje:
+- Pole tekstowe do wpisania imion uczniów (jedno imię na linię)
+- Przycisk "Losuj!" który uruchamia animację
+- Koło fortuny (canvas) z kolorowymi segmentami - każdy segment to jedno imię
+- Animacja kręcenia koła (płynne spowolnienie, 3-4 sekundy)
+- Po zatrzymaniu: wyświetl wylosowane imię dużą czcionką
+- Dźwięk po wylosowaniu
+- Historia losowań (lista kto już był wylosowany)
+- Przycisk "Wyczyść historię"
+- Przycisk "Zaktualizuj koło" po zmianie listy imion
+
+Wygląd:
+- Ciemne tło, kolorowe segmenty koła
+- Strzałka wskazująca na górze koła
+- Wylosowane imię wyświetlone w złotym kolorze
+- Responsywny - działa na komputerze i telefonie
+- Całość w JEDNYM pliku HTML (CSS i JavaScript w środku)
+- Interfejs po polsku
+
+Domyślna lista imion: Anna, Bartek, Celina, Dawid, Ewa, Filip, Gosia, Hubert, Iga, Jakub
+```
+
+Zapisz kod jako `losowanie.html` i otwórz w przeglądarce.
+
+Gotowy przykład do porównania: **[aplikacje/losowanie-uczniow.html](aplikacje/losowanie-uczniow.html)**
+
+**Personalizacja:** Podmień domyślne imiona na imiona swoich uczniów. Możesz też poprosić AI o zmiany - np. "Dodaj możliwość losowania grup 3-osobowych" albo "Dodaj opcję wykluczenia już wylosowanych osób".
+
+### Aplikacja 3: Generator quizów
+
+Ta aplikacja pozwala stworzyć interaktywny quiz - uczniowie odpowiadają na pytania w przeglądarce i od razu widzą wynik.
+
+Skopiuj poniższy prompt:
+
+```
+Stwórz kompletny plik HTML z generatorem quizów dla nauczyciela. Wymagania:
+
+Widok nauczyciela (tworzenie quizu):
+- Pole na tytuł quizu
+- Możliwość dodawania pytań wielokrotnego wyboru (A, B, C, D)
+- Dla każdego pytania: treść pytania, 4 odpowiedzi, zaznaczenie poprawnej
+- Przycisk "Dodaj pytanie" (dodaje kolejne puste pytanie)
+- Przycisk "Usuń pytanie"
+- Przycisk "Generuj quiz" - tworzy gotowy quiz do rozwiązania
+
+Widok ucznia (rozwiązywanie quizu):
+- Wyświetla pytania jedno po drugim (lub wszystkie na raz - do wyboru)
+- Uczeń zaznacza odpowiedzi
+- Po kliknięciu "Sprawdź" - pokazuje wynik: X/Y poprawnych
+- Przy każdym pytaniu: zielone = dobrze, czerwone = źle
+- Na końcu: podsumowanie procentowe
+
+Dodatkowe:
+- Przycisk "Eksportuj quiz" - zapisuje quiz jako tekst do skopiowania
+- Przycisk "Nowy quiz" - czyści wszystko
+- Ładny, czytelny wygląd (jasne tło, duże przyciski)
+- Responsywny - działa na komputerze i telefonie
+- Całość w JEDNYM pliku HTML (CSS i JavaScript w środku)
+- Interfejs po polsku
+```
+
+Zapisz kod jako `quiz.html` i otwórz w przeglądarce.
+
+**Wskazówka:** Możesz też poprosić AI o gotowy quiz z pytaniami. Np. dodaj do promptu: "Na start wygeneruj przykładowy quiz z 5 pytaniami na temat fotosynteza dla klasy 6."
 
 ---
 
 ## Podsumowanie
 
-### Co powinieneś mieć po szkoleniu:
+### Co powinieneś mieć po przejściu tej instrukcji:
 
 | # | Co | Gdzie to masz |
 |---|---|---------------|
@@ -398,7 +484,10 @@ Gotowy przykład do porównania znajdziesz tutaj: **[aplikacje/timer-lekcyjny.ht
 | 3 | Poprawiony plan lekcji (z pliku) | W historii rozmowy z AI |
 | 4 | Analiza ocen z fikcyjnego arkusza | W historii rozmowy z AI |
 | 5 | Notatnik w NotebookLM | Na notebooklm.google.com |
-| 6 | (Bonus) Grafika lub muzyka | Pobrane na dysk |
+| 6 | Grafika lub muzyka | Pobrane na dysk |
+| 7 | Timer lekcyjny | Plik .html na pulpicie |
+| 8 | Losowanie uczniów | Plik .html na pulpicie |
+| 9 | Generator quizów | Plik .html na pulpicie |
 
 ### 3 rzeczy do zrobienia w tym tygodniu
 
@@ -406,7 +495,7 @@ Zapisz sobie 3 konkretne zadania, które zrobisz z AI w najbliższych dniach. Np
 
 1. Przygotuj plan następnej lekcji z AI
 2. Wgraj arkusz ocen (zanonimizowany!) i poproś o analizę
-3. Wygeneruj grafikę na tablicę
+3. Użyj losowania uczniów na lekcji
 
 **Im szybciej zaczniesz używać AI w codziennej pracy, tym szybciej zobaczysz efekty.**
 
